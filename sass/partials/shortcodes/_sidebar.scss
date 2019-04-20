@@ -1,0 +1,141 @@
+@charset "utf-8";
+/**
+ * @file sidebar.css
+ */
+
+.sidebar {
+    width: 100%;
+    max-width: 300px;
+    font-size: 0.88rem;
+
+    .widget-title {
+        position: relative;
+        padding-bottom: 18px;
+        border-bottom: #ddd solid 1px;
+        &::after {
+            background: #0a61ad;
+            bottom: 0;
+            content: "";
+            height: 4px;
+            left: 0;
+            position: absolute;
+            width: 45%;
+        }
+    }
+    
+}
+
+.sidebar-nav {
+    li {
+        a {
+            padding: 15px 35px 15px 5px;
+            display: block;
+            white-space: nowrap;
+
+            i {
+                width: 20px;
+            }
+        }
+    }
+}
+.sidebar-toggle,
+.sidebar-close {
+    display: none
+}
+
+@media screen and (max-width: 992px) {
+
+    .sidebar-nav {
+        h3 {
+        }
+    }
+
+    .sidebar {
+        position: fixed;
+        height: 100%;
+        z-index: 9910;
+        top: 0;
+        left: -300px;
+        padding: 30px 24px;
+        background-color: #fff;
+        overflow-y: auto;
+        -ms-overflow-style: none;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15);
+        -webkit-transition: left 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s, box-shadow 0.3s 0.3s;
+        -o-transition: left 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s, box-shadow 0.3s 0.3s;
+        transition: left 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s, box-shadow 0.3s 0.3s
+    }
+    .sidebar.open {
+        left: 0;
+        -webkit-box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.15)
+    }
+    .sidebar.sidebar-right {
+        left: auto;
+        right: -300px;
+        -webkit-transition: right 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s, box-shadow 0.3s 0.3s;
+        -o-transition: right 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s, box-shadow 0.3s 0.3s;
+        transition: right 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s, box-shadow 0.3s 0.3s
+    }
+    .sidebar.sidebar-right.open {
+        left: auto;
+        right: 0
+    }
+    .sidebar-toggle {
+        display: block;
+        position: fixed;
+        z-index: 9895;
+        width: 48px;
+        height: 48px;
+        top: 50%;
+        left: 0;
+        line-height: 48px;
+        color: #606060;
+        font-size: 24px;
+        text-align: center;
+        background-color: #fff;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out
+    }
+    .sidebar-toggle:hover {
+        color: #999
+    }
+    .sidebar-toggle.sidebar-toggle-right {
+        left: auto;
+        right: 0
+    }
+    .sidebar-toggle.sidebar-open {
+        left: -48px;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15)
+    }
+    .sidebar-toggle.sidebar-open.sidebar-toggle-right {
+        left: auto;
+        right: -48px
+    }
+    .sidebar-close {
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 15px;
+        color: #606060;
+        font-size: 24px;
+        cursor: pointer;
+        -webkit-transition: color 0.3s;
+        -o-transition: color 0.3s;
+        transition: color 0.3s
+    }
+    .sidebar-close:hover {
+        color: #999
+    }
+    .sidebar::-webkit-scrollbar {
+        display: none
+    }
+}
+
+

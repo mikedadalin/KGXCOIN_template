@@ -1,0 +1,88 @@
+/*-----------------------------------------------------------------------------------
+
+	variables.less
+
+-----------------------------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Base Colors
+-----------------------------------------------------------------*/
+
+$theme-color:                   #284f82;
+$body-color:                    #67757c;
+$heading-color:                 #444;
+
+$aColor:	#888;
+$aHoverColor:	#0a61ad;
+
+
+/* ----------------------------------------------------------------
+	Line Height Variables
+-----------------------------------------------------------------*/
+
+$line-height-base:              1.5;
+$line-height-content:           1.8;
+
+
+/* ----------------------------------------------------------------
+	Font Sizes
+-----------------------------------------------------------------*/
+
+$font-size-base:                14px;
+$font-size-h1:                  36px;
+$font-size-h2:                  30px;
+$font-size-h3:                  24px;
+$font-size-h4:                  18px;
+$font-size-h5:                  $font-size-base;
+$font-size-h6:                  12px;
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Bar
+-----------------------------------------------------------------*/
+
+$topbar-height:                 45px;
+$topbar-line-height:            ($topbar-height - 1);
+
+
+/* ----------------------------------------------------------------
+	Header
+-----------------------------------------------------------------*/
+
+$header-height:                 100px;
+
+// Sticky Header
+$sticky-header-height:          60px;
+
+
+// Floating Header Offset
+$header-floating-offset:        60px;
+
+
+// Side Header
+$side-header-width:             260px;
+$side-header-bg:                #FFF;
+
+
+/* ----------------------------------------------------------------
+	Page Title
+-----------------------------------------------------------------*/
+
+
+$page-title-padding:					50px;
+$page-title-parallax-padding:			100px;
+$page-title-mini-padding:				20px;
+
+$page-title-bg:							#F5F5F5;
+$page-title-bg-dark:					#333;
+
+$page-title-size:						28px;
+$page-title-subtitle-size:				18px;
+
+$page-title-parallax-size:				40px;
+$page-title-parallax-subtitle-size:		22px;
+
+$page-title-mini-size:					18px;

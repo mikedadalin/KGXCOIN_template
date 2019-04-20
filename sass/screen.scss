@@ -1,0 +1,69 @@
+@charset "utf-8";
+/**
+* CSS STYLE
+*
+* @project 
+* @version 1.0
+* @author 
+* @copyright 2014
+*/
+
+// Improt jquery-ui
+//@import "mod/jquery-ui";
+
+// compass two col
+//@import "partials/two_col";
+
+/* @group Untitled Group */
+
+@import "compass";
+
+/* @end */
+
+// @import "normalize";
+// @import "compass/reset";
+
+// bootstrap
+// @import "bootstrap-sprockets";
+// @import "bootstrap-variables";
+// @import "bootstrap";
+
+// material-pro
+@import "mod/material-pro/variable";
+@import "mod/material-pro/app";
+
+// font awesome
+@import "mod/font-awesome/font-awesome";
+
+@import "mod/icomoon";
+
+
+// Initialize
+@import "partials/variables";
+@import "partials/mixins/buttons";
+// @import "partials/extend";
+
+// Typography 
+@import "partials/typography";
+
+// Shortcodes
+@import "partials/shortcodes/orientation";
+@import "partials/shortcodes/sidebar";
+@import "partials/shortcodes/preloader";
+@import "partials/shortcodes/milestone";
+
+
+// Fixed
+// @import "partials/bars";
+
+// Combine the partials into a single screen stylesheet.
+// @import "partials/table";
+// @import "partials/form";
+//@import "partials/nav";
+//@import "partials/pagenation";
+@import "partials/page";
+@import "partials/header";
+@import "partials/footer";
+
+/* footer always bottom of the pager */
+// @include sticky-footer(46px, "#container", "#wrapper-footer", "#footer");
